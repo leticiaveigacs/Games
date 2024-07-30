@@ -1,0 +1,63 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align : center;
+    margin: 50px;
+    background-color:#deffe7;  
+   
+}
+
+h1, h2 {
+    color: brown;
+}
+
+
+#exibicao-palavra {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+#letras-chutadas {
+    font-size: 2em;
+    color: violet;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+#mensagem {
+    display: none;
+}
+
+#botao-reiniciar {
+    display: none;
+    margin: auto;
+    background-color: #f48303;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#botao-reiniciar:hover {
+    background-color: #523902;
+}
+
+#btn-chutar {
+   
+    margin: auto;
+    background-color: #f48303;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-chutar:hover {
+    background-color: #523902;
+}
+
+#categoria {
+    color: black;
+}

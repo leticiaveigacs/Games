@@ -1,0 +1,113 @@
+
+body{
+  background-color: #deffe7;   
+  
+
+}
+
+#fundo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  max-height: 600px;
+  /* background-color: #000; */
+  width: 100vw;
+  height: 100vh;
+
+
+ background: rgb(13, 0, 255);
+ position: absolute;
+ top: 53%;
+ left: 50%;
+/*  margin-right: -50%; */
+ transform: translate(-50%, -50%);
+
+}
+
+ #jogador_um {
+  position: absolute;
+  width: 15px;
+  height: 90px;
+  background-color: #000;
+  left: 10px; 
+
+  top: 50%;
+  left: 5%;
+  transform: translate(-50% , -50%);
+}
+
+#jogador_dois {
+  position: absolute;
+  width: 15px;
+  height: 90px;
+  background-color: #000;
+
+  right: 10px;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50% , -50%);
+}  
+
+
+#bola {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+ 
+.pontuacao {
+  position: absolute;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;  
+  padding-bottom: 550px;
+  color: white;
+  font-size: 18px;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+
+} 
+
+
+#pt_um{
+  left: 40%;
+  color: white;
+  
+}
+#pt_dois{
+  right: 40%;
+  color: white;
+}
+
+.h3 {
+  color: white;
+  font-size: 18px;
+}
+samp {
+  color: white;
+  font-size: 18px;
+ 
+}
+
+#titulo {
+  
+  color: rgb(0, 0, 0);
+  font-size: 28px; 
+
+ position: absolute;
+ top: 5%;
+ left: 50%;
+ /* margin-right: -50%; */
+ transform: translate(-50%, -50%);
+
+
+}

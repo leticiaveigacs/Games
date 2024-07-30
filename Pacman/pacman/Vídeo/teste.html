@@ -1,0 +1,31 @@
+.pac-man {
+    width: 8vmin; /* Define a largura do Pac-Man em unidades de viewport (8% da largura da tela) */
+    height: 8vmin; /* Define a altura do Pac-Man em unidades de viewport (8% da altura da tela) */
+    border-radius: 50%; /* Torna o elemento circular */
+    background: conic-gradient(
+        rgb(255, 187, 0) 0% 70%, /* A cor amarela de Pac-Man ocupa de 0% a 70% do gradiente cônico */
+        transparent 70% 100% /* A cor transparente ocupa de 70% a 100% do gradiente cônico */
+    );
+    animation: eat 1s linear infinite; /* Aplica a animação chamada 'eat', que dura 1 segundo e se repete infinitamente */
+}
+
+@keyframes eat {
+    0% {
+        background: conic-gradient(
+            rgb(255, 187, 0) 0% 70%, /* No início da animação, a cor amarela de Pac-Man ocupa de 0% a 70% do gradiente cônico */
+            transparent 70% 100% /* A cor transparente ocupa de 70% a 100% do gradiente cônico */
+        );
+    }
+    50% {
+        background: conic-gradient(
+            rgb(255, 187, 0) 0% 90%, /* No meio da animação, a cor amarela de Pac-Man ocupa de 0% a 90% do gradiente cônico, ampliando a "boca" */
+            transparent 90% 100% /* A cor transparente ocupa de 90% a 100% do gradiente cônico */
+        );
+    }
+    100% {
+        background: conic-gradient(
+            rgb(255, 187, 0) 0% 70%, /* No final da animação, a cor amarela de Pac-Man volta a ocupar de 0% a 70% do gradiente cônico */
+            transparent 70% 100% /* A cor transparente ocupa de 70% a 100% do gradiente cônico */
+        );
+    }
+}
