@@ -34,7 +34,7 @@ To view the site and play the games, follow these instructions:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/leticiaveigacs/site-jogos.git
+   git clone https://github.com/leticiaveigacs/Games.git
    ```
 
 2. **Open the HTML File**
@@ -42,7 +42,7 @@ To view the site and play the games, follow these instructions:
    Navigate to the cloned repository directory and open the `index.html` file in your web browser.
 
    ```bash
-   cd site-jogos
+   cd Games
    open multijogos.html
    ```
 
