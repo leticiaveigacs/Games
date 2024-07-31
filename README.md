@@ -43,7 +43,7 @@ To view the site and play the games, follow these instructions:
 
    ```bash
    cd site-jogos
-   open index.html
+   open multijogos.html
    ```
 
 
