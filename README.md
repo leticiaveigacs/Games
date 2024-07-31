@@ -6,7 +6,7 @@ Welcome to **Site Jogos**, a portal dedicated to bringing together some of the m
 
 ## 🎥 Demonstration - Access the Site
 
-   Alternatively, you can view the site directly at [this link](https://leticiaveigacs.github.io/site-jogos/).
+   Alternatively, you can view the site directly at [this link](https://leticiaveigacs.github.io/Games/multijogos.html).
 
 ## 🛠️ Technical Description
 
