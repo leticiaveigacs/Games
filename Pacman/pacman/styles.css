@@ -1,0 +1,121 @@
+
+#grid{
+    width: 560px; /* largura do grid */
+    height: 560px; /* altura do grid */
+    border: 8px solid rgb(34, 1, 250); /* borda sólida preta */
+    border-radius: 20px; /* borda arrendodada */
+    display: flex; /* flex container para os elementos dentro do grid */
+    flex-wrap: wrap; /* permite que os elementos quebrem para a próxima linha */
+}
+
+#grid div{
+       width: 20px; /* largura das células do grid */
+       height: 20px;     /* altura das células do grid */
+}
+
+
+.pac-dot{
+    background-color: green; /* cor de fundo verde */
+    border: 5px solid white; /* borda branca */
+    box-sizing: border-box; /* caixa inclui borda no cálculo da largura e altura */
+}
+
+.wall{ 
+    background-color: blue;  /* cor de fundo azul */
+}
+
+.power-pellet {
+    background-color: green; /* cor de fundo verde */
+    border-radius: 50%; /* borda arrendodada */
+ }
+
+ /*   .pac-man{    background-color: orange;
+    border: 1px solid orange;
+    border-bottom: 500% ;
+ }   */
+
+ .pac-man {
+    width: 8vmin; /* largura em viewport units */
+    height: 8vmin; /* altura em viewport units */
+    border-radius: 50%;  /* Mantém Pac-Man circular */
+    background: conic-gradient( /* gradiente cônico para animação de movimento */
+         rgb(255, 187, 0) 55deg,
+        transparent 0 125deg,
+        rgb(255, 187, 0) 0
+    );
+    animation: eat 1s linear infinite; /* animação de comer */
+  } 
+
+ 
+ @keyframes eat {
+    0%,
+    50% {
+        background: conic-gradient(
+            rgb(255, 187, 0) 55deg,
+            transparent 0 125deg,
+            rgb(255, 187, 0) 0
+        );
+    }
+    25% {
+        background: conic-gradient(rgb(255, 187, 0) 55deg, rgb(255, 187, 0) 0);
+    }
+}
+
+
+
+ .blinky{
+    background-color: red; /* cor de fundo vermelha */
+ }
+
+ .pinky{
+    background-color: deeppink;    /* cor de fundo rosa  */
+ }
+
+ .inky{
+    background-color: darkcyan;      /* cor de fundo ciano escuro */
+ }
+
+ .clyde{
+    background-color: yellow;  /* cor de fundo amarelo */   
+ }
+
+ .ghost{
+    border-radius: 0;
+    border: 0;    
+ }
+
+ .scared-ghost{
+   background-color: aquamarine;     /* cor de fundo aquamarine */
+ }
+
+ body{
+    /* background-color: rgb(219, 219, 219)   *//* cor de fundo cinza claro */
+    background-color:#deffe7;
+    
+ }
+
+h1 {     
+    position: absolute; /* posicionamento absoluto */
+    top: 1%; /* distância do topo */
+    left: 50%; /* distância da esquerda */
+    transform: translate(-50%, -50%);  /* centralização horizontal e vertical */
+} 
+
+h3 {      
+    position: absolute; /* posicionamento absoluto */
+    top: 90%; /* distância do topo */
+    left: 50%; /* distância da esquerda */
+    transform: translate(-50%, -50%);  /* centralização horizontal e vertical */
+}
+
+#grid{     
+    position: absolute; /* posicionamento absoluto */
+    top: 50%; /* distância do topo */
+    left: 50%; /* distância da esquerda */
+    transform: translate(-50%, -50%);   /* centralização horizontal e vertical */  
+    
+
+}
+
+
+

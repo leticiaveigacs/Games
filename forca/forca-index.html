@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Forca</title>
+        <link rel="stylesheet" href="forca-style.css">
+       
+        <script src="app2.js" defer></script>
+
+</head>
+<body>
+
+
+        <!--TOPO -->
+        <h1>Jogo da Forca</h1>
+        <img id="imagem" src="img/forca0.png">
+        <div id="exibicao-palavra"></div>
+        <input type="text" id="entrada-letra" placeholder="Insira um nova letra" maxlength="1">
+        <button id="btn-chutar" onclick="chutarLetra()">Insira</button>
+
+        <!-- BAIXO-->
+        <h2>Letras Escolhida</h2>
+        <div id="letras-chutadas"></div>
+        <div id="mensagem">Você ganhou!</div><br>
+       <!--  <div style="text-align: center;"> -->
+
+        <h2>Categoria</h2>
+        <div id="categoria"></div><br>
+        <!--  <h2>Letras Escolhida</h2> -->
+        <!--    </div> -->
+        <button id="botao-reiniciar" onclick="iniciarJogo()">Recomeçar</button>
+
+         
+    
+</body>
+</html>
+

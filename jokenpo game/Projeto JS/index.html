@@ -1,0 +1,162 @@
+<!DOCTYPE html> 
+<html lang="en">
+    
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>JS - Jokenpô</title> 
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        
+        <script>
+         
+        </script>
+    </head>
+    <body>
+
+        <hr id="linha_cima">
+        <h1> JS - Jokenpô </h1>
+        <h2 id="texto_jogador">Jogador</h2>
+
+        <div class="miniatura">
+        <img src="images/pedra.png" alt="Pedra">
+        <img src="images/papel.png" alt="Papel">
+        <img src="images/tesoura.png" alt="Tesoura">
+        </div>
+        
+    <div class="form">
+        
+        <form onsubmit="return jogar()"> 
+            
+            <input type="radio" id="pedra" name="c" value="pedra"/>Pedra
+         
+            <input type="radio" id="papel" name="c" value="papel"/>Papel
+        
+            <input type="radio" id="tesoura" name="c" value="tesoura"/>Tesoura
+          
+
+            <br>
+            <input type= "submit" name= "b2"
+            value="JOGAR" onclick="jogar()"> 
+
+           <input type= "reset" name= "b1"
+           value="LIMPAR"onclick="limpar()">
+      
+       </form>
+    </div>
+        
+         
+        <hr id="linha_meio">  
+        <h2 id="texto_computador">Computador</h2>  
+
+        <div class="computador">
+        <img id="imagem" src="images/pc.png" alt="Imagem">  
+                <option value="images/pc.png"></option>
+        </div>
+        <hr id="linha_baixo">  
+         
+       
+    
+        <div class="resultado" id="resultado"></div> <!-- O <div> com o ID "resultado" -->    
+                 
+        
+        <script>
+                     
+
+                     function jogar() {
+                                       
+                         
+                       // Lógica para determinar o resultado do jogo
+                        var  jogador, computador, i, valor_aleatorio, resultado;    
+                        jogador = document.querySelector('input[name="c"]:checked').value;
+                        computador = ["pedra", "papel", "tesoura"]        
+                        i = Math.floor( Math.random()*3)  
+                        valor_aleatorio = computador[i]  
+                        
+                        document.getElementById("resultado").innerHTML = "Jogador: " + jogador + "<br>Computador: " + computador[i] + "<br>";
+
+
+                            // Determina o vencedor
+                            if (jogador == "pedra"){
+                                if (computador[i] == "pedra"){
+                                    resultado = " Empate ";}  
+                                            
+                                 else if (computador[i] == "tesoura"){
+                                    resultado = "  Você ganhou  "; }    
+                                else{       
+                                    resultado = " Você perdeu ";}  
+                                                      
+                                    
+                            } else if (jogador == "papel"){
+                                 if (computador[i] == "papel"){  
+                                    resultado = " Empate "; }   
+                                        
+                                else if (computador[i] == "tesoura"){  
+                                    resultado = " Você perdeu ";} 
+
+                                else{        
+                                    resultado = " Você ganhou ";}
+                                                
+                                            
+                             } else if (jogador == "tesoura"){
+                                 if (computador[i] == "tesoura"){  
+                                    resultado = " Empate "; }    
+                                        
+                                 else if (computador[i] == "papel"){   
+                                    resultado = " Você ganhou ";}  
+
+                                  else{        
+                                        resultado = " Você perdeu ";}   
+                                                                    
+                               }                 
+                                        
+                            else{
+                                document.write(" Valor Inválido! ")}
+
+
+                        document.getElementById("resultado").innerHTML += "Resultado: " + resultado; 
+                      
+
+
+
+                           //   Atualiza a imagem do computador 
+                             var imagem = document.querySelector("#imagem");
+                                switch (valor_aleatorio ) { 
+                                    case "pedra":
+                                   
+                                    imagem.setAttribute('src', "images/pcpedra.png");  
+                                        break;
+                                case "papel":
+                                
+                                imagem.setAttribute('src', "images/pcpapel.png");  
+                                    break;
+                                case "tesoura":
+                                
+                                imagem.setAttribute('src', "images/pctesoura.png");  
+                                        break;
+                                default:
+                                    console.error("Escolha inválida!");
+                                }
+
+                                return false;  }
+
+               function limpar(){
+
+                            // Limpa o resultado
+                            document.getElementById("resultado").innerHTML = ""; 
+
+
+
+                            // Limpa a imagem do computador
+                             var imagem = document.getElementById("imagem");
+                            imagem.setAttribute('src', "images/pc.png"); 
+                        }    
+
+
+            
+       </script>
+    </body>
+
+</html>
+
