@@ -1,19 +1,19 @@
-
-
 ---
 
 # Site Jogos 🎮
 
 Welcome to **Site Jogos**, a portal dedicated to bringing together some of the most iconic and nostalgic classic games. Here, you'll find a collection of games that have defined generations, including Hangman, Rock-Paper-Scissors, Memory, Pacman, and Pong.
 
-## 📂 Table of Contents
+## 🎥 Demonstration - Access the Site
 
-- [About](#about)
-- [Available Games](#available-games)
-- [How to Run](#how-to-run)
-- [Video Demonstration](#video-demonstration)
-- [Technical Description](#technical-description)
-- [Contact](#contact)
+   Alternatively, you can view the site directly at [this link](https://leticiaveigacs.github.io/site-jogos/).
+
+## 🛠️ Technical Description
+
+- **HTML**: Structured the page content with semantic elements for better accessibility and SEO.
+- **CSS**: Used to style the page and ensure the layout is visually appealing and responsive.
+- **JavaScript**: Implemented to add game logic and enable user interaction.
+
 
 ## 📖 About
 
@@ -45,28 +45,6 @@ To view the site and play the games, follow these instructions:
    cd Games
    open multijogos.html
    ```
-
-
-## 🎥 Demonstration - Access the Site
-
-   Alternatively, you can view the site directly at [this link](https://leticiaveigacs.github.io/site-jogos/).
-
-## 🛠️ Technical Description
-
-- **HTML**: Structured the page content with semantic elements for better accessibility and SEO.
-- **CSS**: Used to style the page and ensure the layout is visually appealing and responsive.
-- **JavaScript**: Implemented to add game logic and enable user interaction.
-
-## 📬 Contact
-
-For any questions or feedback, please contact us at:
-
-- **Lisbon | Headquarters**:
-  - Pólo de Educação e Formação D. João de Castro
-  - Rua João - Alto de Santo Amaro, 1300-312 Lisbon
-
-- **Porto | Delegation**:
-  - Rua de São Rosendo, 377, 4300-478 Porto
 
 ---
 
