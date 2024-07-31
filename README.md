@@ -1,4 +1,4 @@
-Claro! Aqui está a versão reescrita do `README.md` para o seu projeto de site com jogos:
+
 
 ---
 
