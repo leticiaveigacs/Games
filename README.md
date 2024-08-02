@@ -10,7 +10,7 @@ Welcome to **Site Jogos**, a portal dedicated to bringing together some of the m
 
 ## 🛠️ Technical Description
 
-- **HTML**: Structured the page content with semantic elements for better accessibility and SEO.
+- **HTML**: Structured the page content with elements HTML.
 - **CSS**: Used to style the page and ensure the layout is visually appealing and responsive.
 - **JavaScript**: Implemented to add game logic and enable user interaction.
 
