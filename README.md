@@ -39,7 +39,7 @@ To view the site and play the games, follow these instructions:
 
 2. **Open the HTML File**
 
-   Navigate to the cloned repository directory and open the `index.html` file in your web browser.
+   Navigate to the cloned repository directory and open the ` multijogos.html` file in your web browser.
 
    ```bash
    cd Games
